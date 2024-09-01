@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item
+        android:id="@+id/jobsFragment"
+        android:title="@string/jobs"
+        android:icon="@drawable/ic_job"/>
+
+    <item
+        android:id="@+id/bookmarkFragment"
+        android:title="@string/bookmarks"
+        android:icon="@drawable/ic_bookmark"/>
+
+</menu>

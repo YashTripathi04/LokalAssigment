@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="black">#FF000000</color>
+    <color name="white">#FFFFFFFF</color>
+
+    <color name="bottom_nav_bg_color">#FFFFFF</color>
+    <color name="selected_color">#9A52F7</color>
+    <color name="unselected_color">#868995</color>
+    <color name="seekbar_bg_color">#F4F4F4</color>
+    <color name="highlight_invert_btn_color">#F6F6F6</color>
+</resources>

@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/nav_graph"
+    app:startDestination="@id/jobsFragment">
+
+    <fragment
+        android:id="@+id/jobsFragment"
+        android:name="com.example.lokalassignment.ui.fragment.JobsFragment"
+        android:label="fragment_jobs"
+        tools:layout="@layout/fragment_jobs" >
+        <action
+            android:id="@+id/action_jobsFragment_to_jobDetailsFragment"
+            app:destination="@id/jobDetailsFragment">
+<!--            <argument-->
+<!--                android:name="job"-->
+<!--                app:argType="com.example.lokalassignment.model.Result" -->
+<!--                app:nullable="true"/>-->
+        </action>
+    </fragment>
+
+    <fragment
+        android:id="@+id/bookmarkFragment"
+        android:name="com.example.lokalassignment.ui.fragment.BookmarkFragment"
+        android:label="fragment_bookmark"
+        tools:layout="@layout/fragment_bookmark" >
+        <action
+            android:id="@+id/action_bookmarkFragment_to_jobDetailsFragment"
+            app:destination="@id/jobDetailsFragment">
+<!--            <argument-->
+<!--                android:name="bookmarkedJob"-->
+<!--                app:argType="com.example.lokalassignment.model.BookmarkedJob" -->
+<!--                app:nullable="true"/>-->
+        </action>
+    </fragment>
+
+    <fragment
+        android:id="@+id/jobDetailsFragment"
+        android:name="com.example.lokalassignment.ui.fragment.JobDetailsFragment"
+        android:label="fragment_job_details"
+        tools:layout="@layout/fragment_job_details" >
+
+        <argument
+            android:name="job"
+            app:argType="com.example.lokalassignment.model.Result"
+            app:nullable="true"/>
+
+        <argument
+            android:name="bookmarkJob"
+            app:argType="com.example.lokalassignment.model.BookmarkedJob"
+            app:nullable="true"/>
+
+    </fragment>
+</navigation>
